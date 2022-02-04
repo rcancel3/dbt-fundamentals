@@ -19,6 +19,7 @@ pivoted as (
     from payments
     where status = 'success'
     group by 1 
+    order by 1
 )
 
 select * from pivoted
